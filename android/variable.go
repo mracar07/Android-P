@@ -101,6 +101,10 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Needs_text_relocations struct {
+			Cppflags []string
+		}
+
 		Uses_media_extensions struct {
 			Cflags []string
 		}
@@ -221,6 +225,8 @@ type productVariables struct {
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
 	Has_legacy_camera_hal1 *bool `json:",omitempty"`
+
+	Needs_text_relocations *bool `json:",omitempty"`
 
 	Uses_media_extensions *bool `json:",omitempty"`
 
