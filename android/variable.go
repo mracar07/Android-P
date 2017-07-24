@@ -100,6 +100,10 @@ type variableProperties struct {
 		Has_legacy_camera_hal1 struct {
 			Cflags []string
 		}
+
+		Uses_media_extensions struct {
+			Cflags []string
+		}
 	} `android:"arch_variant"`
 }
 
@@ -217,6 +221,8 @@ type productVariables struct {
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
 	Has_legacy_camera_hal1 *bool `json:",omitempty"`
+
+	Uses_media_extensions *bool `json:",omitempty"`
 
 }
 
