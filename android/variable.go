@@ -96,6 +96,10 @@ type variableProperties struct {
 		Uml struct {
 			Cppflags []string
 		}
+
+		Has_legacy_camera_hal1 struct {
+			Cflags []string
+		}
 	} `android:"arch_variant"`
 }
 
@@ -201,6 +205,7 @@ type productVariables struct {
 	Override_rs_driver *string `json:",omitempty"`
 
 	DeviceKernelHeaders []string `json:",omitempty"`
+
 	DistDir             *string  `json:",omitempty"`
 
 	ExtraVndkVersions []string `json:",omitempty"`
@@ -210,6 +215,9 @@ type productVariables struct {
 	PgoAdditionalProfileDirs []string `json:",omitempty"`
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
+
+	Has_legacy_camera_hal1 *bool `json:",omitempty"`
+
 }
 
 func boolPtr(v bool) *bool {
