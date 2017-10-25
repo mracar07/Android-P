@@ -108,6 +108,10 @@ type variableProperties struct {
 		Uses_media_extensions struct {
 			Cflags []string
 		}
+
+		Uses_qcom_bsp_legacy struct {
+			Cflags []string
+		}
 	} `android:"arch_variant"`
 }
 
@@ -229,6 +233,8 @@ type productVariables struct {
 	Needs_text_relocations *bool `json:",omitempty"`
 
 	Uses_media_extensions *bool `json:",omitempty"`
+
+	Uses_qcom_bsp_legacy *bool `json:",omitempty"`
 
 }
 
