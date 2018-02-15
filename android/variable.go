@@ -105,6 +105,10 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
+		Target_shim_libs struct {
+			Cppflags []string
+		}
+
 		Uses_media_extensions struct {
 			Cflags []string
 		}
@@ -231,6 +235,8 @@ type productVariables struct {
 	Has_legacy_camera_hal1 *bool `json:",omitempty"`
 
 	Needs_text_relocations *bool `json:",omitempty"`
+
+	Target_shim_libs *string `json:",omitempty"`
 
 	Uses_media_extensions *bool `json:",omitempty"`
 
