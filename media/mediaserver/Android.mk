@@ -46,7 +46,8 @@ ifeq ($(TARGET_HAS_LEGACY_CAMERA_HAL1),true)
         libgui \
         libhidltransport \
         android.hardware.camera.common@1.0 \
-        android.hardware.camera.provider@2.4
+        android.hardware.camera.provider@2.4 \
+        vendor.qti.hardware.camera.device@1.0
 endif
 
 include $(BUILD_EXECUTABLE)
