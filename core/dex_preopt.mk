@@ -56,7 +56,6 @@ endif
       endif
     endif
   endif
-endif
 
 GLOBAL_DEXPREOPT_FLAGS :=
 
